@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Soft Skills Curriculum | Best Performance Systems</title>
+<meta name="description" content="Best Performance Systems soft skills workshops for supervisors and teams.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--navy:#13253A;--navy2:#1B3350;--orange:#B4430F;--orange2:#9A390C;--cream:#F6F4EF;--peach:#F2B489;--body:#3E4C5B;--line:#DDD8CC;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--cream);color:var(--body);font-family:'IBM Plex Sans',system-ui,Arial,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.h{font-family:'Barlow Condensed',Arial Narrow,sans-serif;font-weight:700;color:var(--navy);letter-spacing:.005em;line-height:1.05;margin:0}
+.eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:15px;color:var(--orange);margin:0 0 10px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--orange);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:15px 24px;border-radius:10px;box-shadow:0 8px 18px rgba(180,67,15,.28);transition:background .15s,transform .15s}
+.btn:hover{background:var(--orange2);transform:translateY(-1px)}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.55);box-shadow:none}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(19,37,58,.96);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{background:#fff;border-radius:10px;padding:6px 12px;display:inline-flex;align-items:center}
+.logo img{height:38px;width:auto}
+.nav .links{display:flex;align-items:center;gap:26px}
+.nav .links a.l{color:#C9D2DB;text-decoration:none;font-size:15px;font-weight:500}
+.nav .links a.l:hover{color:#fff}
+.nav .btn{padding:11px 18px;font-size:15px}
+/* hero */
+.hero{position:relative;color:#fff;background:var(--navy) url(img/hero.jpg) center 30%/cover no-repeat;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(19,37,58,.97) 0%,rgba(19,37,58,.9) 45%,rgba(19,37,58,.55) 100%)}
+.hero .wrap{position:relative;padding-top:clamp(64px,9vw,120px);padding-bottom:clamp(64px,9vw,110px)}
+.hero .eyebrow{color:var(--peach)}
+.hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(48px,7.5vw,92px);line-height:.95;margin:0 0 24px;max-width:760px}
+.hero h1 span{color:var(--peach)}
+.hero .lead{max-width:720px;color:#DCE3EA;font-size:clamp(17px,1.5vw,19px);margin:0 0 30px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero .bar{position:absolute;left:0;right:0;bottom:0;height:6px;background:var(--orange)}
+/* stats strip */
+.stats{background:#fff;border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.stat{padding:26px 10px;text-align:center;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:'Barlow Condensed',sans-serif;font-size:40px;color:var(--orange);line-height:1}
+.stat span{font-size:14px;color:var(--body);font-weight:500}
+/* about */
+.about{padding:clamp(56px,7vw,96px) 0}
+.about .grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(28px,5vw,72px);align-items:start}
+.about h2{font-size:clamp(36px,4vw,52px)}
+.about p{margin:0 0 16px}
+.quote{border-left:5px solid var(--orange);background:#fff;padding:22px 26px;border-radius:0 12px 12px 0;color:var(--navy);font-weight:500;box-shadow:0 10px 26px rgba(19,37,58,.06)}
+/* index */
+.index{padding:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 16px 9px 9px;font-size:14.5px;font-weight:600;color:var(--navy);text-decoration:none;transition:border-color .15s,transform .15s}
+.chip i{font-style:normal;background:var(--navy);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:14px;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
+.chip:hover{border-color:var(--orange);transform:translateY(-1px)}
+/* workshops */
+.workshops{padding:clamp(40px,5vw,70px) 0 clamp(50px,6vw,90px)}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:34px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(36px,4vw,52px)}
+.ws{display:grid;grid-template-columns:1fr 1fr;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:28px;box-shadow:0 1px 2px rgba(19,37,58,.04),0 18px 40px rgba(19,37,58,.07)}
+.ws .pic{position:relative;min-height:340px;background:#ccc}
+.ws .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ws .pic .n{position:absolute;left:22px;top:22px;background:var(--orange);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(0,0,0,.28)}
+.ws .txt{padding:clamp(26px,3.4vw,46px)}
+.ws:nth-child(even) .pic{order:2}
+.ws .tag{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:var(--orange);margin-bottom:8px}
+.ws h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--navy);font-size:clamp(28px,2.6vw,36px);line-height:1.05;margin:0 0 16px}
+.ws p{margin:0 0 14px}
+.ws h4{font-size:15px;font-weight:600;color:var(--navy);margin:20px 0 10px;text-transform:none}
+.ws ul{list-style:none;margin:0 0 6px;padding:0}
+.ws li{position:relative;padding-left:32px;margin:0 0 10px;font-size:16px}
+.ws li:before{content:"";position:absolute;left:0;top:4px;width:20px;height:20px;border-radius:6px;background:var(--orange) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/13px no-repeat}
+/* band */
+.band{position:relative;color:#fff;background:var(--navy) url(img/band.jpg) center/cover no-repeat}
+.band:before{content:"";position:absolute;inset:0;background:rgba(19,37,58,.88)}
+.band .wrap{position:relative;padding:clamp(56px,7vw,96px) clamp(18px,4vw,48px);display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.band h2{color:#fff;font-size:clamp(34px,4vw,54px);max-width:720px}
+.band p{color:#DCE3EA;margin:12px 0 0;max-width:640px}
+footer{background:#0E1C2C;color:#94A2B1;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:26px;padding-bottom:26px}
+footer .logo img{height:30px}
+@media (max-width:900px){
+ .about .grid{grid-template-columns:1fr}
+ .ws{grid-template-columns:1fr}
+ .ws:nth-child(even) .pic{order:0}
+ .ws .pic{min-height:0;aspect-ratio:16/10}
+ .nav .links a.l{display:none}
+}
+@media (max-width:560px){
+ .nav .wrap{height:64px}.logo img{height:30px}.nav .btn{padding:10px 14px;font-size:14px}
+ .stats .wrap{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line);padding:18px 10px}.stat:last-child{border-bottom:0}
+ .hero:before{background:linear-gradient(180deg,rgba(19,37,58,.88),rgba(19,37,58,.96))}
+ .btn{width:100%;justify-content:center}
+ .chip{font-size:13.5px}
+}
+</style></head><body>
+<nav class="nav"><div class="wrap"><a class="logo" href="#top"><img src="img/bps-logo.png" alt="Best Performance Systems"></a>
+<div class="links"><a class="l" href="#workshops">Workshops</a><a class="btn" href="#book">Talk to a consultant</a></div></div></nav>
+<header class="hero" id="top"><div class="wrap">
+<p class="eyebrow">Best Performance Systems</p>
+<h1>Soft Skills <span>Curriculum</span></h1>
+<p class="lead">Every company wants a mix of skills and experience in their staff that will contribute to a culture that will give them a competitive edge. It's no longer enough to be a functional expert in their job. In addition to the core competencies, there are certain "soft skills" a superior worker needs.</p>
+<div class="ctas"><a class="btn" href="#workshops">See the workshops</a><a class="btn ghost" href="#book">Talk to a consultant</a></div>
+</div><div class="bar"></div></header>
+<section class="stats"><div class="wrap">
+<div class="stat"><b>11</b><span>workshops</span></div>
+<div class="stat"><b>Since 2012</b><span>devoted to manufacturing</span></div>
+<div class="stat"><b>Customized</b><span>to your department or organization</span></div>
+</div></section>
+<section class="about"><div class="wrap"><div class="grid"><div><p class="eyebrow">Why soft skills</p><h2 class="h">Technical and Soft skills</h2></div><div><p>Research suggests and experience shows that companies are more stable and successful when the staff possesses Technical and Soft skills.</p><p>"Soft skills" refer to a cluster of personal qualities, habits, ability to work in teams,  relationship building, leadership, adaptable and creative at solving problems, attitudes and social graces that make someone an effective good employee, who is happy working, enhances the environment, and compatible to work with.</p><p class="quote">These workshops are customized to fulfill the specific needs of your department or organization.</p></div></div></div></section>
+<section class="workshops" id="workshops"><div class="wrap">
+<div class="sec-head"><div><p class="eyebrow">The workshops</p><h2 class="h">Pick a workshop</h2></div></div>
+<div class="index"><div class="chips"><a class="chip" href="#presentation-skills"><i>01</i>Presentation Skills</a><a class="chip" href="#handling-conflict-thru-a-non-confrontati"><i>02</i>Handling Conflict Thru A Non-Confrontational Resolution Process</a><a class="chip" href="#influencing-and-motivating-worker-behavi"><i>03</i>Influencing and Motivating Worker Behavior</a><a class="chip" href="#supervisor-skill-of-trust"><i>04</i>Supervisor Skill of “Trust”</a><a class="chip" href="#supervisor-skill-quit-stayed"><i>05</i>Supervisor Skill: Quit &amp; Stayed</a><a class="chip" href="#coaching-for-work-performance"><i>06</i>Coaching For Work Performance</a><a class="chip" href="#mentoring-for-job-skills"><i>07</i>Mentoring For Job Skills</a><a class="chip" href="#be-happy-now"><i>08</i>Be Happy Now</a><a class="chip" href="#emotional-intelligence"><i>09</i>Emotional Intelligence</a><a class="chip" href="#motivational-leadership"><i>10</i>Motivational Leadership</a><a class="chip" href="#reading-body-language-non-verbal-communi"><i>11</i>Reading Body Language &amp; Non Verbal Communication</a></div></div>
+<div style="height:34px"></div>
+<article class="ws" id="presentation-skills"><div class="pic"><img src="img/v1-01.jpg" alt="two supervisors in hard hats at a whiteboard" loading="lazy"><span class="n">01</span></div><div class="txt"><span class="tag">Workshop 01</span><h3>Presentation Skills</h3><p>To run an efficient department, there are times you must make presentations to a few Workers, or your entire team. To succeed, whether it is a 5 minute or all day presentation, your audience must be motivated to listen, learn, understand, apply &amp; remember what you are teaching.</p><h4>You will learn:</h4><ul><li>How to prepare your lesson, materials, the room &amp; yourself?</li><li>How to prepare the trainees for success?</li><li>How to keep the energy in the room up and positive?</li><li>How you can be relaxed, effective and have fun while teaching?</li><li>How to follow up to ensure future application of the lessons taught?</li></ul></div></article><article class="ws" id="handling-conflict-thru-a-non-confrontati"><div class="pic"><img src="img/v1-02.jpg" alt="supervisor and workers talking and smiling on the plant floo" loading="lazy"><span class="n">02</span></div><div class="txt"><span class="tag">Workshop 02</span><h3>Handling Conflict Thru A Non-Confrontational Resolution Process</h3><p>Conflict is a normal part of life. Disagreements between people happen. These disagreements may have been impacting your department for a few days, and sometimes it can last years. When they do, you need to be able to resolve conflicts successfully so things run more pleasant and efficient at work, and your personal relationships are better. This program gives you a simple, comfortable, Step by Step process to easily identify, evaluate, and solve conflict so all parties feel they have “won.”  This process is non-confrontational as the 2 people or groups come to a solution. It can be implemented by supervisors</p></div></article><article class="ws" id="influencing-and-motivating-worker-behavi"><div class="pic"><img src="img/v1-03.jpg" alt="crew in safety vests talking and clapping together" loading="lazy"><span class="n">03</span></div><div class="txt"><span class="tag">Workshop 03</span><h3>Influencing and Motivating Worker Behavior</h3><p>A predictable proactive plan to increase the quality of functioning of a large % of your team members. We have all experienced the frustration of workers not doing what they are asked to do. There is a predictable system that will influence people to do what you ask of them, whether it is an individual, a department, or all workers at the organization.</p><h4>You will learn:</h4><ul><li>A simple 6 step system to influence and motivate desired behaviors</li><li>How to keep the new habits alive as long as you want?</li><li>How to influence workers to influence positive behavior in each other?</li></ul></div></article><article class="ws" id="supervisor-skill-of-trust"><div class="pic"><img src="img/v1-04.jpg" alt="supervisor talking with a team in hard hats on a plant floor" loading="lazy"><span class="n">04</span></div><div class="txt"><span class="tag">Workshop 04</span><h3>Supervisor Skill of “Trust”</h3><p>Stimulate Workers To Trust Supervisors And Feel Respected. Learn how to take action on the 13 behaviors that trusted leaders throughout the world have. It is easy and predictable  to gain the trust of your teams. It is well documented that workers who trust their leaders work faster, and perform in a superior manner.</p></div></article><article class="ws" id="supervisor-skill-quit-stayed"><div class="pic"><img src="img/v1-05.jpg" alt="tired worker slumped at her desk" loading="lazy"><span class="n">05</span></div><div class="txt"><span class="tag">Workshop 05</span><h3>Supervisor Skill: Quit &amp; Stayed</h3><p>A Cornell University study determined that 60% of western workers are just putting in time for the paycheck, they no longer care. Learn to Recognize-Influence and to Re-engage these workers that are holding back the organization from functioning the “Best!”</p></div></article><article class="ws" id="coaching-for-work-performance"><div class="pic"><img src="img/v1-06.jpg" alt="smiling worker in a hard hat on the factory floor" loading="lazy"><span class="n">06</span></div><div class="txt"><span class="tag">Workshop 06</span><h3>Coaching For Work Performance</h3><p>It is human nature that people do not like being told what to do. Coaching is a process that allows the worker to be involved in the development of the situation. By being involved, the worker feels respected and more consistently goes the extra mile to do a superior job.</p></div></article><article class="ws" id="mentoring-for-job-skills"><div class="pic"><img src="img/v1-07.jpg" alt="worker in safety glasses assembling electronics" loading="lazy"><span class="n">07</span></div><div class="txt"><span class="tag">Workshop 07</span><h3>Mentoring For Job Skills</h3><p>You have experienced staff members who know all the ropes, and new workers with minimal experience, yet there is not a formal transfer of knowledge between them. This process makes passing knowledge along SOP and contributes to a more successful operation.</p></div></article><article class="ws" id="be-happy-now"><div class="pic"><img src="img/v1-08.jpg" alt="team celebrating with high fives" loading="lazy"><span class="n">08</span></div><div class="txt"><span class="tag">Workshop 08</span><h3>Be Happy Now</h3><p>It is well documented that happy people perform better in every way, and enjoy their work. This influences them to not leave. Being happy is a predictable, scientific, easy, achievable skill set. Let’s do it and make your property the 2nd happiest place on earth. It is pretty hard to beat Disneyland on this one!</p></div></article><article class="ws" id="emotional-intelligence"><div class="pic"><img src="img/v1-09.jpg" alt="relaxed executive reviewing a report" loading="lazy"><span class="n">09</span></div><div class="txt"><span class="tag">Workshop 09</span><h3>Emotional Intelligence</h3><p>It has been proven that EQ (Emotional Intelligence) has a tremendous and predictable effect on the success of the individual. There is a simple way to measure your EQ in each of the 4 EQ areas, and take specific action to improve your EQ where you need it. This has become one of the most important areas in improving operational success and efficiency.</p></div></article><article class="ws" id="motivational-leadership"><div class="pic"><img src="img/v1-10.jpg" alt="plant team in hard hats applauding" loading="lazy"><span class="n">10</span></div><div class="txt"><span class="tag">Workshop 10</span><h3>Motivational Leadership</h3><p>An organization runs on the behavior and influence of the supervisors on the workers. Too many supervisors were good workers who were promoted, but never were taught leadership skills. This program has 2 main parts. To motivate supervisors to want to be leaders, and to give them skills so they will motivate their workers to excel.</p></div></article><article class="ws" id="reading-body-language-non-verbal-communi"><div class="pic"><img src="img/v1-11.jpg" alt="workers giving a thumbs up" loading="lazy"><span class="n">11</span></div><div class="txt"><span class="tag">Workshop 11</span><h3>Reading Body Language &amp; Non Verbal Communication</h3><p>90% of communication is nonverbal: A look in the eyes, head position, hand, shoulder and over all body position and movement. There is a science to predictably read these signs.</p><p>Workers will be able to anticipate guests’ needs, and fellow Workers attitudes which will facilitate efficiency and working together. Supervisors will understand their reports feelings and communicate appropriately to influence the “Best” behavior. These skills will improve ll relationships in your life, at work and home. We learned this from FBI profilers by the way</p></div></article>
+</div></section>
+<section class="band" id="book"><div class="wrap">
+<div><p class="eyebrow" style="color:var(--peach)">Best Performance Systems</p><h2 class="h">Keeping People Healthy &amp; Performing Their Best</h2></div>
+<a class="btn" href="#book">Talk to a consultant</a>
+</div></section>
+<footer><div class="wrap"><span class="logo"><img src="img/bps-logo.png" alt="Best Performance Systems"></span><span>bestperformancesystems.com</span></div></footer>
+</body></html>
