@@ -357,6 +357,17 @@ p{margin:0 0 18px;font-size:19px;line-height:1.65;color:#3E4C5B;max-width:66ch}
  .final h2{font-size:36px}
 }
 html,body{overflow-x:hidden}
+
+/* A better day for everyone: cleaner card layout */
+section:has(.roles) h2{max-width:none!important}
+.roles{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:22px!important;margin-top:28px}
+.role{display:flex!important;flex-direction:column!important;gap:0!important;padding:0!important;background:#F6F4EF;border:1px solid #E6E1D6;border-radius:14px!important;overflow:hidden;height:100%}
+.role img{width:100%!important;height:auto!important;aspect-ratio:4/3;object-fit:cover;border:0!important;border-radius:0!important;box-shadow:none!important;display:block}
+.role > div{padding:20px 22px 24px}
+.role h3{font-size:24px!important;margin:0 0 8px!important}
+.role p{font-size:17px!important;line-height:1.55;margin:0}
+@media (max-width:1100px){.roles{grid-template-columns:repeat(2,minmax(0,1fr))!important}.role img{aspect-ratio:16/9}}
+@media (max-width:600px){.roles{grid-template-columns:1fr!important}}
 </style>
 </head><body>
 <div style="width:100%">
