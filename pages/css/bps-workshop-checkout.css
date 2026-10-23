@@ -1,0 +1,53 @@
+/* ===== BPS CHECKOUT ===== */
+
+body{background:#F6F4EF}
+.section p,.section li,.section span,.section div{font-family:'IBM Plex Sans',sans-serif}
+.section h1,.section h2,.section h3,.section h4{font-family:'Barlow Condensed',sans-serif!important;color:#13253A!important;font-weight:700!important;letter-spacing:0}
+.bpsco-top{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.bpsco-top img{height:46px;width:auto}
+.bpsco-top span{font-size:14px;color:#5D6B79;font-weight:500}
+.bpsco-seats{display:inline-flex;align-items:center;gap:8px;background:#13253A;color:#fff!important;font-size:13px!important;font-weight:600;border-radius:999px;padding:6px 14px;margin:0 0 16px!important}
+.bpsco-seats i{width:8px;height:8px;border-radius:50%;background:#F2B489;display:inline-block}
+.bpsco h1{font-size:46px!important;line-height:1.05!important;margin:0 0 12px!important}
+.bpsco p{font-size:16.5px;line-height:1.6;color:#3E4C5B;margin:0 0 10px}
+.bpsco .bpsco-sub{font-size:18px!important;color:#13253A!important;font-weight:600}
+.bpsco-ask{list-style:none!important;padding:0!important;margin:6px 0 14px!important}
+.bpsco-ask li{position:relative;padding-left:22px;margin:0 0 8px;font-size:16.5px;line-height:1.5;color:#3E4C5B;list-style:none!important}
+.bpsco-ask li:before{content:"";position:absolute;left:4px;top:9px;width:8px;height:8px;border-radius:50%;background:#B4430F}
+.bpsco-price{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px;margin:14px 0 4px!important}
+.bpsco-price b{font-family:'Barlow Condensed',sans-serif;font-size:58px;color:#B4430F;line-height:1}
+.bpsco-price s{font-size:21px;color:#8A95A1}
+.bpsco-price span{font-size:14px;color:#5D6B79}
+.bpsco-eb{font-family:'Barlow Condensed',sans-serif!important;font-weight:700!important;letter-spacing:.14em;text-transform:uppercase;color:#B4430F!important;font-size:15px!important;margin:4px 0 12px!important}
+.bpsco-inc{list-style:none!important;padding:0!important;margin:0!important}
+.bpsco-inc li{position:relative;padding-left:32px;margin:0 0 12px;font-size:16px;line-height:1.5;color:#3E4C5B;list-style:none!important}
+.bpsco-inc li strong{color:#13253A}
+.bpsco-inc li:before{content:"";position:absolute;left:0;top:2px;width:20px;height:20px;border-radius:6px;background:#B4430F url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/13px no-repeat}
+.bpsco-guar{display:flex;gap:22px;align-items:center;background:#fff;border:1px solid #DDD8CC;border-left:5px solid #B4430F;border-radius:0 12px 12px 0;padding:18px 20px}
+.bpsco-guar svg{flex:0 0 120px;width:120px;height:120px;filter:drop-shadow(0 6px 12px rgba(19,37,58,.22));transform:rotate(-6deg)}
+.bpsco-guar div{font-size:15px;line-height:1.55;color:#3E4C5B}
+.bpsco-guar b{color:#13253A;font-size:17px}
+.bpsco-guar ul{margin:6px 0 6px;padding-left:20px}
+.bpsco-renew{font-size:14.5px!important;color:#5D6B79!important}
+.bpsco-renew a{color:#B4430F!important;text-decoration:underline}
+#block-1744906803654_0 img{border-radius:12px;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover}
+@media(max-width:767px){.bpsco h1{font-size:36px!important}.bpsco-guar{flex-direction:column;align-items:flex-start}.bpsco-top img{height:38px}}
+/* Oct 20 updates */
+#payment-elements-wrapper::before{content:"\2193  Choose Card or PayPal below, then enter your details.";display:block;font-family:'IBM Plex Sans',sans-serif;font-size:15.5px;font-weight:700;line-height:1.4;color:#B4430F;margin:0 0 12px}
+.store-card-checkbox{display:none!important}
+.bps-ach{font-family:'IBM Plex Sans',sans-serif;font-size:14px;line-height:1.5;color:#13253A;background:#FFF5EF;border:1px solid #F2D3BF;border-radius:8px;padding:10px 12px;margin:12px 0 0}
+.bps-ach a{color:#B4430F;text-decoration:underline;font-weight:600}
+.offer-summary .order-bump__thumbnail{background:#fff url("https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/sites/26264/images/06X6KomSeMQsI8honRgA_BPS-LOGO_High_res.png") center/86% auto no-repeat!important}
+.offer-summary .order-bump__thumbnail pds-icon{visibility:hidden}
+
+/* BPS soft skills workshop checkouts (Oct 23) */
+.bpsco h5{font-family:'Barlow Condensed',sans-serif!important;font-size:22px!important;font-weight:700!important;color:#13253A!important;margin:18px 0 8px!important}
+.bpsw-img{border-radius:12px;overflow:hidden;margin:18px 0 22px;box-shadow:0 14px 34px rgba(19,37,58,.14)}
+.bpsw-img img{width:100%;aspect-ratio:2/1;object-fit:cover;display:block}
+.bpsco .bpsco-inc li{margin:0 0 10px}
+.bpsw-how{background:#fff;border:1px solid #DDD8CC;border-left:5px solid #B4430F;border-radius:0 12px 12px 0;padding:20px 22px}
+.bpsw-how .r{display:flex;gap:14px;margin:0 0 12px;align-items:flex-start}
+.bpsw-how .r:last-child{margin:0}
+.bpsw-how .n{flex:0 0 30px;height:30px;border-radius:50%;background:#13253A;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center}
+.bpsw-how b{color:#13253A;display:block;font-size:15.5px}
+.bpsw-how span{font-size:14.5px;line-height:1.5;color:#3E4C5B}
